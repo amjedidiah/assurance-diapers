@@ -1,0 +1,209 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box !important;
+  word-wrap: break-word !important;
+  transition: all 0.5;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+h1,
+h1 ul li,
+h2,
+h2 ul li,
+h3,
+h3 ul li,
+h4,
+h4 ul li,
+h5,
+h5 ul li,
+h6,
+h6 ul li {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: inherit !important;
+}
+
+a:hover,
+a.active {
+  text-decoration: none;
+  /* transform: scale(1.05); */
+}
+
+a[href="#"],
+a[href="#"]:visited,
+a[href="#"]:hover {
+  color: #ff00b2 !important;
+}
+
+textarea {
+  resize: none;
+}
+
+img {
+  border: none !important;
+}
+
+.bg-primary {
+  background: #9ecfed !important;
+}
+
+.bg-light {
+  background: #bcbcbc !important;
+}
+
+.border-light {
+  border-color: #bcbcbc !important;
+}
+
+.text-light {
+  color: #bcbcbc !important;
+}
+
+.btn-success {
+  background: #88c13d !important;
+}
+
+.text-success,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #88c13d !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.btn {
+  font-weight: 500;
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.form-control,
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover,
+.form-control:-webkit-autofill:focus,
+.form-control:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+  box-shadow: 0 0 0px 1000px #fff inset !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+form .form-response {
+  transition: all 0.5s;
+}
+
+.input-group-prepend {
+  width: fit-content;
+}
+
+#map {
+  height: 500px;
+}
+
+.modal,
+.modal-dialog,
+.modal-content {
+  box-shadow: none !important;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  border: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.toast .toast-header,
+.toast .toast-body {
+  background: #fff;
+}
+
+.text-404 {
+  font-size: 170px;
+  line-height: 0.7;
+}
+
+/************************************
+************Toggle Switch************
+************************************/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #8ad729;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #8ad729;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(29px);
+  -ms-transform: translateX(29px);
+  transform: translateX(29px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

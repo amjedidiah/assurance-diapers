@@ -1,0 +1,6 @@
+.navbar-toggler,
+.navbar-toggler:hover,
+.navbar-toggler:active {
+  border: none !important;
+  box-shadow: none !important;
+}
