@@ -4,10 +4,12 @@
     public $public_path; 
     private $header;
     private $footer;
+    private $toast;
 
-    public function __construct($header,$footer) {
+    public function __construct($header,$footer, $toast) {
       $this->header = $header;
       $this->footer = $footer;
+      $this->toast = $toast;
       $this->path = strpos($_SERVER['REQUEST_URI'], 'store') ? '../' : './';
       $this->connect = $this->path.'actions/connect.action.php';
       $this->createTables();
@@ -147,15 +149,11 @@
       $nav === "" || $nav === null ? "" : include $nav;
       // $page->displayContent($content);
       include $content;
-      strpos($_SERVER['REQUEST_URI'], '404') ? '' : include $this->footer;
+      strpos($_SERVER['REQUEST_URI'], '404') || strpos($_SERVER['REQUEST_URI'], 'login') || strpos($_SERVER['REQUEST_URI'], 'get-started') ? '' : include $this->footer;
+      include $this->toast;
     }
 
   }
-
-
-
-  $site = new site('./inc/header.inc.php','./inc/footer.inc.php');
-  $page = new page;
 
   
 

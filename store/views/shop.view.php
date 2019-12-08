@@ -26,7 +26,7 @@
         <!-- Amado Nav -->
         <nav class="amado-nav">
             <ul>
-                <li><a href="./">Home</a></li>
+                <li><a href="./">Categories</a></li>
                 <li class="active"><a href="shop.html">Shop</a></li>
                 <!-- <li><a href="product.html">Product</a></li> -->
                 <li><a href="cart.html">Cart</a></li>

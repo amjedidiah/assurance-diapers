@@ -105,6 +105,8 @@
           </li>
           <li class="nav-item" id="storeNav">
             <a class="nav-link text-success" href="./store">Store</a>
+          <li class="nav-item" id="loginNav">
+            <a class="nav-link btn text-success" href="./login">Login</a>
           </li>
         </ul>
       </div>

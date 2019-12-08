@@ -1,7 +1,7 @@
   <!-- Position it -->
   <div style="position: fixed; bottom: 2.5%; right: 1.5%;z-index: 11">
 
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000" data-autohide="true">
       <div class="toast-header">
         <img src="..." class="rounded mr-2" alt="...">
         <strong class="mr-auto">Bootstrap</strong>

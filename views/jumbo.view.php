@@ -1,7 +1,7 @@
     <div class="jumbotron bg-white p-0">
       <div
         id="carouselExampleIndicators"
-        class="carousel carousel-jumbotron slide"
+        class="carousel carousel-jumbotron slide "
         data-ride="carousel"
       >
         <ol class="carousel-indicators">

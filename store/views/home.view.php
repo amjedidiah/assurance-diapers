@@ -30,7 +30,7 @@
             <!-- Amado Nav -->
             <nav class="amado-nav">
                 <ul>
-                    <li class="active"><a href="./">Home</a></li>
+                    <li class="active"><a href="./">Categories</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <!-- <li><a href="product.html">Product</a></li> -->
                     <li><a href="cart.html">Cart</a></li>
@@ -59,7 +59,7 @@
         <!-- Header Area End -->
 
         <!-- Product Catagories Area Start -->
-        <div class="products-catagories-area clearfix">
+        <div class="products-catagories-area clearfix py-4">
             <div class="amado-pro-catagory clearfix" id='catsDiv'></div>
         </div>
         <!-- Product Catagories Area End -->

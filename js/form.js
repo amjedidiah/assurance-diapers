@@ -88,3 +88,5 @@ const isEmptyObject = obj => {
     }
     return true;
 };
+
+const actionLoad = () => $(".toast").toast("show"); //Enable all toasts

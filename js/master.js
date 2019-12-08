@@ -5,7 +5,7 @@ window.onload = () => {
         isHTTP = host.includes("localhost") ? `http` : `https`,
         baseURL = `${isHTTP}://${host}/actions/`;
 
-    $(".toast").toast("show"); //Enable all toasts
+    
 
     setCarouselParams(Date.now()); // Carousel.js
     blogConfig(); // Blog.js

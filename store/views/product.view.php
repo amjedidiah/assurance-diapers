@@ -26,7 +26,7 @@
         <!-- Amado Nav -->
         <nav class="amado-nav">
             <ul>
-                <li><a href="./">Home</a></li>
+                <li><a href="./">Categories</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li class="active"><a href="product.html">Product</a></li>
                 <li><a href="cart.html">Cart</a></li>
@@ -62,7 +62,7 @@
                 <div class="col-12">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb mt-50">
-                            <li class="breadcrumb-item"><a href="./">Home</a></li>
+                            <!-- <li class="breadcrumb-item"><a href="./">Home</a></li> -->
                             <li class="breadcrumb-item product-brand"><a href="#"></a></li>
                             <li class="breadcrumb-item active product-name" aria-current="page"></li>
                         </ol>
