@@ -1,5 +1,4 @@
 <?php
-
   class site {
     public $public_path; 
     private $header;

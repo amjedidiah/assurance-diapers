@@ -6,7 +6,7 @@
         <h1 class="display-4 text-404"><i class="fas fa-box"></i></h1>
         <h2 class='text-uppercase'>coming soon</h2>
       </hgroup>
-      <p>Our store is still under construction</p>
+      <p>Our store is still under construction.</p>
       <a href="./"><button class="btn btn-lg btn-success">Go Home</button></a>
     </div>
   </div>
