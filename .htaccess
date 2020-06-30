@@ -14,5 +14,5 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 ###404 Redirect
-ErrorDocument 404 https://assurancediapers.com/404
+ErrorDocument 404 /404/
 </IfModule>

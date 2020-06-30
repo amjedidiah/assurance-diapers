@@ -1,24 +1,24 @@
 <?php
-    require("config.action.php");
+require("config.action.php");
 
-    $srvr = 'localhost';
+
+
+if (strpos($baseURL, 'localhost')) {
+    $srvr = "localhost";
+    $pass = "amjedidiah";
+    $usr = "root";
+    $db = "assurancediapers";
+} else {
+    $srvr = "borebl.com";
     $pass = "&3:8:8-$6048";
+    $usr = "borejwpf_amjedidiah";
+    $db = "borejwpf_assurancediapers";
+}
 
-    if(strpos($baseURL, 'localhost')) {
-        $srvr .= ':3308';
-        $usr = "amjedidiah";
-        $db = "assurance_diapers";
-    } else {
-        $usr = "borejwpf_amjedidiah";
-        $db = "borejwpf_assurancediapers";
-    }
+$mysqli = new mysqli($srvr, $usr, $pass, $db);
+if ($mysqli->connect_error) {
+    die('Connect Error (' . $mysqli->connect_errno . ') '
+        . $mysqli->connect_error);
+    $mysqli->close();
+}
 
-    $mysqli = new mysqli($srvr, $usr, $pass, $db);
-    if ($mysqli->connect_error) {
-        die('Connect Error (' . $mysqli->connect_errno. ') '
-                . $mysqli->connect_error);
-        $mysqli->close();
-    }
-    
-    
-?>
