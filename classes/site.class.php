@@ -1,5 +1,4 @@
 <?php
-
   class site {
     public $public_path; 
     private $header;
@@ -10,10 +9,10 @@
       $this->header = $header;
       $this->footer = $footer;
       $this->toast = $toast;
-      $this->path = strpos($_SERVER['REQUEST_URI'], 'store') ? '../' : './';
+      $this->path = './';
       $this->connect = $this->path.'actions/connect.action.php';
-      $this->createTables();
-      $this->insertProductsAndImages();
+      // $this->createTables();
+      // $this->insertProductsAndImages();
     }
 
     //Create Products table
@@ -149,7 +148,7 @@
       $nav === "" || $nav === null ? "" : include $nav;
       // $page->displayContent($content);
       include $content;
-      strpos($_SERVER['REQUEST_URI'], '404') || strpos($_SERVER['REQUEST_URI'], 'login') || strpos($_SERVER['REQUEST_URI'], 'get-started') ? '' : include $this->footer;
+      strpos($_SERVER['REQUEST_URI'], '404') || strpos($_SERVER['REQUEST_URI'], 'store') || strpos($_SERVER['REQUEST_URI'], 'login') || strpos($_SERVER['REQUEST_URI'], 'get-started') ? '' : include $this->footer;
       include $this->toast;
     }
 
