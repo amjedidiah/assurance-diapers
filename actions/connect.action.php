@@ -9,10 +9,10 @@ if (strpos($baseURL, 'localhost')) {
     $usr = "root";
     $db = "assurancediapers";
 } else {
-    $srvr = "borebl.com";
+    $srvr = "localhost:3306";
     $pass = "&3:8:8-$6048";
-    $usr = "borejwpf_amjedidiah";
-    $db = "borejwpf_assurancediapers";
+    $usr = "assuktem_amjedidiah";
+    $db = "assuktem_assurancediapers";
 }
 
 $mysqli = new mysqli($srvr, $usr, $pass, $db);
